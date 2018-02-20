@@ -81,18 +81,22 @@ a.uk-button-primary:active{
 }
 
 /*--------------------------------------------------
-  HEADER
+  INDEX PAGE
 --------------------------------------------------*/
 
-header .uk-search-default .uk-search-input,
-header .uk-search-default .uk-search-input:focus{
+.index header .uk-search-default .uk-search-input,
+.login header .uk-search-default .uk-search-input,
+.index header .uk-search-default .uk-search-input:focus,
+.login header .uk-search-default .uk-search-input:focus{
     background-color: #691DCD;
     color: #FFF;
     border: none;
 }
 
-header .uk-search-default .uk-search-icon,
-header .uk-search-default .uk-search-input::placeholder {
+.index header .uk-search-default .uk-search-icon,
+.login header .uk-search-default .uk-search-icon,
+.index header .uk-search-default .uk-search-input::placeholder,
+.login header .uk-search-default .uk-search-input::placeholder {
     color: #FFF;
 }
 
@@ -118,10 +122,6 @@ header .uk-navbar-right .uk-navbar-nav li a{
     color: #FFF;
     font-family: var(--main-font);
 }
-
-/*--------------------------------------------------
-  INDEX PAGE
---------------------------------------------------*/
 
 body.index,
 body.signup,
@@ -352,6 +352,29 @@ section .main-intro p.top{
     color: var(--pink);
     text-transform: uppercase;
     font-weight: 500;
+}
+
+/*--------------------------------------------------
+  CUNSOMER SETTINGS
+--------------------------------------------------*/
+
+#cunsomer-settings header{
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#cunsomer-settings .search-container .uk-search{
+    top: 20px;
+    left: 120px;
+}
+
+.uk-dropdown.uk-dropdown-bottom-right{
+    border: 1px solid #E0E0E0;
+    box-shadow: none;
+    padding: 20px;
+}
+
+.uk-dropdown.uk-dropdown-bottom-right li a{
+    font-size: 16px;
 }
 
 /*--------------------------------------------------
