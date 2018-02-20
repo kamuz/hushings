@@ -31,7 +31,7 @@
                                             <li><a href="">Messages</a></li>
                                         </ul>
                                         <a href="#" class="uk-margin-left"><img src="img/avatar.jpg" alt="Avatar"></a>
-                                        <div uk-dropdown>
+                                        <div data-uk-dropdown>
                                             <ul class="uk-nav uk-dropdown-nav">
                                                 <li class="uk-active"><a href="#">Settings</a></li>
                                                 <li><a href="#">Help</a></li>
@@ -46,37 +46,106 @@
         <div class="uk-container uk-margin-large-top">
             <div data-uk-grid>
                 <div class="uk-width-1-2 uk-align-center">
-                    <h2 class="uk-text-center uk-text-uppercase ">Account</h2>
                     <form class="uk-form-horizontal uk-margin-large">
-                    <div class="uk-margin">
-                        <label class="uk-form-label" for="form-horizontal-text">Text</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Some text...">
+                        <h2 class="uk-text-center uk-text-uppercase ">Account</h2>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="fullname">Name*</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="fullname" type="text" placeholder="Your Name" value="Christopher Watkins" >
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="uk-margin">
-                        <label class="uk-form-label" for="form-horizontal-select">Select</label>
-                        <div class="uk-form-controls">
-                            <select class="uk-select" id="form-horizontal-select">
-                                <option>Option 01</option>
-                                <option>Option 02</option>
-                            </select>
+                        <div class="uk-margin">
+                            <div class="uk-form-label">Publication avatar</div>
+                            <div class="uk-form-controls">
+                                <img src="img/avatar-medium.jpg" alt="Avatar">
+                                <input type="hidden" name="avatar">
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="uk-margin">
-                        <div class="uk-form-label">Radio</div>
-                        <div class="uk-form-controls uk-form-controls-text">
-                            <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
-                            <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="email">Email</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="email" type="email" placeholder="Your Email" value="example@example.com" >
+                            </div>
                         </div>
-                    </div>
-
-                </form>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="password">Password</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="password" type="password" placeholder="Your Password" value="********" >
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="credit-card">Credit card</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="credit-card" type="text" placeholder="Your Credit card" value="xxxx xxxx xxxx 3475" >
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="language">Language</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="language">
+                                    <option>English</option>
+                                    <option>Russian</option>
+                                    <option>Ukraine</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h2 class="uk-text-center uk-text-uppercase ">Dashboard</h2>
+                        <div class="uk-margin">
+                            <div class="uk-form-label">Interface</div>
+                            <div class="uk-form-controls">
+                                <label><input class="uk-checkbox" type="checkbox" checked> Show notifications from people you follow</label><br>
+                                <label><input class="uk-checkbox" type="checkbox"> Enable endless scrolling</label>
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <div class="uk-form-label">Sounds</div>
+                            <div class="uk-form-controls">
+                                <label><input class="uk-checkbox" type="checkbox" checked> Messaging sounds</label>
+                            </div>
+                        </div>
+                        <h2 class="uk-text-center uk-text-uppercase "> Notifications</h2>
+                        <div class="uk-margin">
+                            <div class="uk-form-label">Email you about</div>
+                            <div class="uk-form-controls">
+                                <label><input class="uk-checkbox" type="checkbox" checked> New posts</label><br>
+                                <label><input class="uk-checkbox" type="checkbox"> Mentions</label><br>
+                                <label><input class="uk-checkbox" type="checkbox"> Answered Asks</label>
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="notifications">Notifications</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="notifications">
+                                    <option>From everyone</option>
+                                    <option>From friends</option>
+                                    <option>From selected people</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="uk-margin-large">
+                            <div class="uk-form-controls">
+                                <a href="#" class="ul-align-center uk-text-uppercase uk-margin-large-right uk-text-danger uk-text-bold">Cancel</a>
+                                <input type="submit" class="uk-button uk-button-danger" value="Save">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="uk-container">
+            <div data-uk-grid>
+                <div class="uk-width-2-5">&copy; Hushings</div>
+                <div class="uk-width-3-5">
+                    <ul class="uk-subnav" data-uk-margin>
+                        <li class="uk-active"><a href="#">Help</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

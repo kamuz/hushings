@@ -47,6 +47,20 @@ a.uk-button{
     font-weight: 500;
 }
 
+.uk-button{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.uk-text-danger{
+    color: var(--pink);
+}
+
+.uk-text-danger .uk-text-bold{
+    font-weight: 500;
+}
+
 a.uk-button-danger{
     background-color: var(--pink);
 }
@@ -367,6 +381,26 @@ section .main-intro p.top{
     left: 120px;
 }
 
+#cunsomer-settings form h2{
+    margin-bottom: 35px;
+}
+
+#cunsomer-settings form .uk-form-label{
+    font-size: 16px;
+    color: #9E9E9E;
+}
+
+#cunsomer-settings form input[type="text"],
+#cunsomer-settings form input[type="email"],
+#cunsomer-settings form input[type="password"],
+#cunsomer-settings form select{
+    height: 30px;
+}
+
+#cunsomer-settings form input.uk-checkbox{
+    margin-right: 5px;
+}
+
 .uk-dropdown.uk-dropdown-bottom-right{
     border: 1px solid #E0E0E0;
     box-shadow: none;
@@ -374,6 +408,22 @@ section .main-intro p.top{
 }
 
 .uk-dropdown.uk-dropdown-bottom-right li a{
+    font-size: 16px;
+}
+
+/*--------------------------------------------------
+  FOOTER
+--------------------------------------------------*/
+
+footer .uk-container{
+    border-top: 1px solid #E5E5E5;
+    padding: 25px 0 20px;
+}
+
+footer,
+footer .uk-grid .uk-subnav > li > a{
+    text-transform: none;
+    color: #E5E5E5;
     font-size: 16px;
 }
 
