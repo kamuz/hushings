@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700");
+@import url("../libs/uikit/css/uikit.min.css");
+@import url("../libs/fullpage/css/fullpage.min.css");
+
+/*--------------------------------------------------
+  VARIABLES
+--------------------------------------------------*/
+
+:root{
+    --main-font: "Roboto", sans-serif;
+    --pink: #FF4081;
+    --pink-hover: #EC407A;
+    --pink-active: #E91E63;
+    --blue: #542593;
+    --blue-hover: #50238B;
+    --blue-active: #4A2080;
+}
+
+/*--------------------------------------------------
+  MAIN
+--------------------------------------------------*/
+
+body{
+    font-size: 16px;
+    color: #333333;
+}
+
+body, *{
+    font-family: var(--main-font);
+}
+
+h1, h2, h3, h4, h5{
+    font-family: var(--main-font);
+}
+
+a.uk-button{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+a.uk-button-danger{
+    background-color: var(--pink);
+}
+
+a.uk-button-danger:hover{
+    background-color: var(--pink-hover);
+}
+
+a.uk-button-danger:active{
+    background-color: var(--pink-active);
+}
+
+a.uk-button-primary{
+    background-color: var(--blue);
+}
+
+a.uk-button-primary:hover{
+    background-color: var(--blue-hover);
+}
+
+a.uk-button-primary:active{
+    background-color: var(--blue-active);
+}
+
+/*--------------------------------------------------
+  FULLSCREEN PAGE
+--------------------------------------------------*/
+
+#fp-nav ul li a span{
+    width: 12px;
+    height: 12px;
+    background: #5513D2;
+}
+
+#fp-nav ul li a.active span{
+    background: var(--pink);
+}
+
+/*--------------------------------------------------
+  HEADER
+--------------------------------------------------*/
+
+header .uk-search-default .uk-search-input,
+header .uk-search-default .uk-search-input:focus{
+    background-color: #691DCD;
+    color: #FFF;
+    border: none;
+}
+
+header .uk-search-default .uk-search-icon,
+header .uk-search-default .uk-search-input::placeholder {
+    color: #FFF;
+}
+
+.uk-search-default .uk-search-input,
+.uk-search-default .uk-search-input:focus {
+    font-size: 16px;
+    font-weight: 300;
+    width: 220px;
+    height: 30px;
+}
+
+.uk-search-default .uk-search-icon {
+    width: 35px;
+}
+
+.uk-search-default .uk-search-icon:not(.uk-search-icon-flip) + .uk-search-input {
+    padding-left: 35px;
+}
+
+header .uk-navbar-right .uk-navbar-nav li a{
+    font-size: 16px;
+    text-transform: none;
+    color: #FFF;
+    font-family: var(--main-font);
+}
+
+/*--------------------------------------------------
+  INDEX PAGE
+--------------------------------------------------*/
+
+body.index,
+body.signup,
+body.login {
+    background-image: linear-gradient(225deg, #AC32E4 0%, #7918f2 48%, #4801ff 100%);
+}
+
+body .arrow-down{
+    color: #FFF;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 100%;
+    border: 1px solid #FFF;
+    margin-left: -20px;
+    outline: none;
+}
+
+#section0,
+#form-container{
+    background: url(../img/bg.png) center center no-repeat;
+}
+
+#section1{
+    background-color: rgba(0, 89, 191, 0.5);
+}
+#section2{
+    background-color: rgba(23, 20, 123, 0.5);
+}
+
+section .main-intro p{
+    font-size: 20px;
+    color: #FFF;
+}
+
+section .main-intro p.bottom{
+    margin-bottom: 50px;
+}
+
+section .main-intro p.top{
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+/*--------------------------------------------------
+  LOGIN
+--------------------------------------------------*/
+
+.login .uk-container.form-container {
+    padding-top: 120px;
+}
+
+.login .uk-container.form-container h3 {
+    color: #333333;
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.form-container input[type="email"],
+.form-container input[type="text"],
+.form-container input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #EFEFEF;
+    padding: 5px;
+}
+
+.form-container input[type="email"]::placeholder,
+.form-container input[type="text"]::placeholder,
+.form-container input[type="password"]::placeholder{
+    color:  #333;
+    font-weight: 300;
+}
+
+/*--------------------------------------------------
+  SIGNUP PAGE
+--------------------------------------------------*/
+
+.signup-page nav .uk-navbar-nav li a{
+    color: #333333;
+    height:  72px;
+}
+
+#signup-page .cover-content{
+    position: relative;
+}
+
+#signup-page .uk-cover-container{
+    margin-top: 70px;
+}
+
+#signup-page #signup-profile-photo{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -70px;
+    margin-bottom: -50px;
+}
+
+#signup-page .visa-icon{
+    width: 26px;
+    height: 16px;
+    background: url(../img/visa-icon.png);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#signup-page .signup-profile-login,
+#signup-page .signup-profile-name,
+#signup-page .signup-profile-description{
+    line-height: 34px;
+}
+
+#signup-page .signup-price,
+#signup-page .signup-profile-login,
+#signup-page .signup-profile-name{
+    font-size: 20px;
+}
+
+#signup-page .signup-price{
+    font-weight: 500;
+    margin: 30px 0 60px;
+}
+
+#signup-page .signup-profile-login,
+#signup-page .signup-profile-name{
+    font-weight: 400;
+}
+
+#signup-page .signup-profile-description{
+    font-size: 16px;
+}
+
+/*--------------------------------------------------
+  SIGNUP CUNSOMER
+--------------------------------------------------*/
+
+#signup-cunsomer #search{
+    margin-top: 10px;
+}
+
+#signup-cunsomer .uk-text-lead{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+#signup-cunsomer .uk-search-default .uk-search-input,
+#signup-cunsomer .search-container{
+    width: 300px;
+}
+
+#signup-cunsomer h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#signup-cunsomer .posts-list{
+    margin-bottom: 50px;
+}
+
+#signup-cunsomer .posts-list .uk-card{
+    border: 1px solid #e0e0e0;
+    box-shadow: none;
+}
+
+#signup-cunsomer .posts-list .uk-card img.fullwidth{
+    width: 100%;
+}
+
+#signup-cunsomer .posts-list .uk-card img.post-thumb{
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    margin-left: -50px;
+}
+
+#signup-cunsomer .posts-list .uk-card .uk-card-body{
+    padding-bottom: 0;
+}
+
+#signup-cunsomer .posts-list .uk-card .uk-card-body h3,
+#signup-cunsomer .posts-list .uk-card .uk-card-body p{
+    text-align: center;
+}
+
+#signup-cunsomer .posts-list .uk-card .uk-card-body h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#signup-cunsomer .posts-list .uk-card .uk-card-body p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9e9e9e;
+    margin-top: 5px;
+}
+
+#signup-cunsomer .posts-list .signup-profile-login{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#signup-cunsomer .posts-list .uk-card .image-mini-set{
+    padding: 15px;
+}
+
+#signup-cunsomer .posts-list .uk-card .image-mini-set img{
+    width: 100%;
+    height: 100%;
+}
+
+#signup-cunsomer .posts-list .uk-card .price-subcribe .price,
+#signup-cunsomer .posts-list .uk-card .price-subcribe .subcribe-button{
+    margin:  5px 15px 15px;
+}
+
+#signup-cunsomer .posts-list .uk-card .price-subcribe .subcribe-button{
+    color: var(--pink);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*--------------------------------------------------
+  RESPONSIVE
+--------------------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+    /**/
+}
+
+@media only screen and (max-width: 992px) {
+    /**/
+}
+
+@media only screen and (max-width: 768px) {
+    /**/
+}
+
+@media only screen and (max-width: 480px) {
+    /**/
+}
+
+@media only screen and (max-width: 320px) {
+    /**/
+}
