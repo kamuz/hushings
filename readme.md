@@ -8,4 +8,5 @@ List of pages:
 * [Personal Sign Up Page](https://roddyr2.github.io/hushings/signup-page.html)
 * [Sign Up Consomer](https://roddyr2.github.io/hushings/signup-cunsomer.html)
 * [Consomer Settings](https://roddyr2.github.io/hushings/cunsomer-settings.html)
-* [Consomer Dashboard](https://roddyr2.github.io/hushings/cunsomer-dashboard.html.html)
+* [Consomer Dashboard](https://roddyr2.github.io/hushings/cunsomer-dashboard.html)
+* [Consomer Likes](https://roddyr2.github.io/hushings/cunsomer-likes.html)
