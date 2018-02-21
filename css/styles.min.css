@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700");
 @import url("../libs/uikit/css/uikit.min.css");
 @import url("../libs/fullpage/css/fullpage.min.css");
+@import url("../libs/mediaelement/css/mediaelement.css");
 
 /*--------------------------------------------------
   VARIABLES
@@ -36,9 +37,61 @@ h1, h2, h3, h4, h5{
 h2{
     font-size: 20px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
-a.uk-button{
+/*--------------------------------------------------
+  TOP MENU
+--------------------------------------------------*/
+
+nav.uk-navbar-container .uk-navbar-right .uk-navbar-nav li a{
+    font-size: 16px;
+    text-transform: none;
+    color: #FFF;
+    font-family: var(--main-font);
+}
+
+nav.uk-navbar-container.nav-cunsomer .uk-navbar-nav li > a{
+    color: #333333;
+    height:  72px;
+}
+
+nav.uk-navbar-container .uk-navbar-nav li.uk-active > a{
+    color: var(--pink);
+}
+
+nav.uk-navbar-container .uk-dropdown.uk-dropdown-bottom-right{
+    border: 1px solid #E0E0E0;
+    box-shadow: none;
+    padding: 20px;
+}
+
+nav.uk-navbar-container .uk-dropdown.uk-dropdown-bottom-right li a{
+    font-size: 16px;
+}
+
+/*--------------------------------------------------
+  FOOTER
+--------------------------------------------------*/
+
+footer .uk-container{
+    border-top: 1px solid #E5E5E5;
+    margin-top: 30px;
+    padding: 25px 0 20px;
+}
+
+footer,
+footer .uk-grid .uk-subnav > li > a{
+    text-transform: none;
+    color: #E0E0E0;
+    font-size: 16px;
+}
+
+/*--------------------------------------------------
+  BUTTONS
+--------------------------------------------------*/
+
+.uk-button{
     margin-bottom: 15px;
     margin-top: 15px;
     height: 36px;
@@ -61,27 +114,27 @@ a.uk-button{
     font-weight: 500;
 }
 
-a.uk-button-danger{
+.uk-button-danger{
     background-color: var(--pink);
 }
 
-a.uk-button-danger:hover{
+.uk-button-danger:hover{
     background-color: var(--pink-hover);
 }
 
-a.uk-button-danger:active{
+.uk-button-danger:active{
     background-color: var(--pink-active);
 }
 
-a.uk-button-primary{
+.uk-button-primary{
     background-color: var(--blue);
 }
 
-a.uk-button-primary:hover{
+.uk-button-primary:hover{
     background-color: var(--blue-hover);
 }
 
-a.uk-button-primary:active{
+.uk-button-primary:active{
     background-color: var(--blue-active);
 }
 
@@ -133,13 +186,6 @@ a.uk-button-primary:active{
 
 .uk-search-default .uk-search-icon:not(.uk-search-icon-flip) + .uk-search-input {
     padding-left: 35px;
-}
-
-header .uk-navbar-right .uk-navbar-nav li a{
-    font-size: 16px;
-    text-transform: none;
-    color: #FFF;
-    font-family: var(--main-font);
 }
 
 body.index,
@@ -221,11 +267,6 @@ section .main-intro p.top{
   SIGNUP PAGE
 --------------------------------------------------*/
 
-.signup-page nav .uk-navbar-nav li a{
-    color: #333333;
-    height:  72px;
-}
-
 #signup-page .cover-content{
     position: relative;
 }
@@ -300,12 +341,13 @@ section .main-intro p.top{
     margin-bottom: 50px;
 }
 
-#signup-cunsomer .posts-list .uk-card{
+.uk-card{
     border: 1px solid #e0e0e0;
     box-shadow: none;
 }
 
-#signup-cunsomer .posts-list .uk-card img.fullwidth{
+#signup-cunsomer .posts-list .uk-card img.fullwidth,
+.blog-post-item img.fullwidth{
     width: 100%;
 }
 
@@ -372,11 +414,11 @@ section .main-intro p.top{
   CUNSOMER SETTINGS
 --------------------------------------------------*/
 
-#cunsomer-settings header{
+.cunsomer header{
     border-bottom: 1px solid #E0E0E0;
 }
 
-#cunsomer-settings .search-container .uk-search{
+.cunsomer .search-container .uk-search{
     top: 20px;
     left: 120px;
 }
@@ -401,30 +443,86 @@ section .main-intro p.top{
     margin-right: 5px;
 }
 
-.uk-dropdown.uk-dropdown-bottom-right{
-    border: 1px solid #E0E0E0;
-    box-shadow: none;
-    padding: 20px;
-}
-
-.uk-dropdown.uk-dropdown-bottom-right li a{
-    font-size: 16px;
-}
-
 /*--------------------------------------------------
-  FOOTER
+  CUNSOMER DASHBOARD
 --------------------------------------------------*/
 
-footer .uk-container{
-    border-top: 1px solid #E5E5E5;
-    padding: 25px 0 20px;
+.cunsomer .uk-margin-large-top{
+    margin-top: 50px !important;
 }
 
-footer,
-footer .uk-grid .uk-subnav > li > a{
-    text-transform: none;
-    color: #E5E5E5;
-    font-size: 16px;
+.recommended-blogs .recommended-blog-item img{
+    margin: 0 15px 15px 0;
+}
+
+.recommended-blogs .recommended-blog-item h3,
+.recommended-blogs .recommended-blog-item p{
+    margin: 0 auto 5px;
+    line-height: 25px;
+}
+
+.recommended-blogs .recommended-blog-item h3 a,
+.recommended-blogs .recommended-blog-item p.blog-description{
+    font-size: 20px;
+}
+
+.recommended-blogs .recommended-blog-item h3 a{
+    color: #333333;
+}
+
+.recommended-blogs .recommended-blog-item p.blog-description{
+    color: #9E9E9E;
+}
+
+.blog-post-item .cunsomer-username{
+    padding: 10px 0 0 15px;
+    font-size: 20px;
+    color: #333333;
+}
+
+.blog-post-item .uk-close-large{
+    padding: 15px;
+    margin: 0;
+}
+
+.blog-post-item .blog-post-teaser{
+    margin: 15px 15px 0;
+}
+
+.blog-post-item h3 a{
+    font-size: 20px;
+    color: #333333;
+}
+
+.blog-post-item .hashtags a,
+.blog-post-item .subcribe-like{
+    color: #9E9E9E;
+}
+
+.blog-post-item .notes-counter{
+    font-weight: 400;
+    color: #333333;
+}
+
+.blog-post-item .notes-couter,
+.blog-post-item .subcribe-like{
+    margin-bottom: 20px;
+}
+
+.blog-post-item .subcribe-like{
+    margin-top: 15px;
+}
+
+.blog-post-item .subcribe-like a:hover,
+.blog-post-item .subcribe-like a:focus,
+.blog-post-item .subcribe-like a.uk-active{
+    color: var(--pink);
+}
+
+.blog-post-item .uk-card-media-top .media-wrapper{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
 }
 
 /*--------------------------------------------------
