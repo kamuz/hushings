@@ -217,16 +217,16 @@ body .arrow-down{
     background-color: rgba(23, 20, 123, 0.5);
 }
 
-section .main-intro p{
+body.index .main-intro p{
     font-size: 20px;
     color: #FFF;
 }
 
-section .main-intro p.bottom{
+body.index .main-intro p.bottom{
     margin-bottom: 50px;
 }
 
-section .main-intro p.top{
+body.index .main-intro p.top{
     font-size: 26px;
     text-transform: uppercase;
 }
