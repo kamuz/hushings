@@ -13,3 +13,4 @@ List of pages:
 * [Consomer Search results](https://roddyr2.github.io/hushings/cunsomer-search.html)
 * [Creator Settings](https://roddyr2.github.io/hushings/creator-settings.html)
 * [Creator Followers](https://roddyr2.github.io/hushings/creator-followers.html)
+* [Creator Profile](https://roddyr2.github.io/hushings/creator-profile.html)
