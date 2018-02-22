@@ -41,6 +41,19 @@ h2{
 }
 
 /*--------------------------------------------------
+  UIKIT
+--------------------------------------------------*/
+
+.uk-lightbox{
+    background: rgba(0,0,0,.5);
+}
+
+.uk-form-label{
+    font-size: 16px;
+    color: #9E9E9E;
+}
+
+/*--------------------------------------------------
   TOP MENU
 --------------------------------------------------*/
 
@@ -420,14 +433,6 @@ body.index .main-intro p.top{
 }
 
 /*--------------------------------------------------
-  LIGHTBOX
---------------------------------------------------*/
-
-.uk-lightbox{
-    background: rgba(0,0,0,.5);
-}
-
-/*--------------------------------------------------
   CUNSOMER SETTINGS
 --------------------------------------------------*/
 
@@ -446,15 +451,10 @@ body.index .main-intro p.top{
     margin-bottom: 35px;
 }
 
-#cunsomer-settings form .uk-form-label{
-    font-size: 16px;
-    color: #9E9E9E;
-}
-
-#cunsomer-settings form input[type="text"],
-#cunsomer-settings form input[type="email"],
-#cunsomer-settings form input[type="password"],
-#cunsomer-settings form select{
+input.uk-input[type="text"],
+input.uk-input[type="email"],
+input.uk-input[type="password"],
+.uk-form-horizontal .uk-form-controls select.uk-select{
     height: 30px;
 }
 
@@ -622,6 +622,68 @@ body.index .main-intro p.top{
 
 #creator-profile .cover-content .uk-position-absolute .name{
     font-size: 20px;
+}
+
+/*--------------------------------------------------
+  CREATOR APPEARANCE
+--------------------------------------------------*/
+
+.tags-button-list .uk-button{
+    font-weight: 300;
+    color: #333333;
+    padding: 0 10px;
+    line-height: 30px;
+    height: 30px;
+}
+
+.tags-button-list .uk-close{
+    display: block;
+    float: right;
+    line-height: 27px;
+    margin-left: 10px;
+}
+
+.tags-button-list .uk-close svg{
+    width: 10px;
+    height: 10px;
+}
+
+.tags-button-list .add-tag-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    color: #333;
+    padding: 0;
+    line-height: 27px;
+}
+
+.tags-button-list .add-tag-button svg{
+    color: #9E9E9E;
+}
+
+#creator-appearance .social .uk-icon{
+    margin-right: 5px;
+}
+
+.tumblr-icon{
+    color: #35465c;
+}
+
+.facebook-icon{
+    color: #3b5998;
+}
+
+.twitter-icon{
+    color: #1da1f2;
+}
+
+#creator-appearance .social .uk-form-label{
+    width: 140px;
+    color: #333333;
+}
+
+#creator-appearance .social .uk-form-controls{
+    margin-left: 150px;
 }
 
 /*--------------------------------------------------

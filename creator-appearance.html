@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.min.css">
     <script src="js/scripts.min.js"></script>
 </head>
-<body id="cunsomer-settings" class="cunsomer">
+<body id="creator-appearance" class="cunsomer">
     <header>
         <div class="uk-container">
             <nav class="uk-navbar-container uk-navbar-transparent nav-cunsomer" data-uk-navbar>
@@ -52,64 +52,63 @@
             <div data-uk-grid>
                 <div class="uk-width-1-2 uk-align-center">
                     <form class="uk-form-horizontal uk-margin-large">
-                        <h2 class="uk-text-center uk-text-uppercase">Account</h2>
+                        <h2 class="uk-text-center uk-text-uppercase uk-margin-medium-bottom">Info</h2>
                         <div class="uk-margin">
-                            <label class="uk-form-label" for="email">Email</label>
+                            <label class="uk-form-label" for="fullname">Name*</label>
                             <div class="uk-form-controls">
-                                <input class="uk-input" id="email" type="email" placeholder="Your Email" value="example@example.com" >
+                                <input class="uk-input" id="fullname" type="text" placeholder="Your Name" value="The Beauty of Wildlife" >
                             </div>
                         </div>
                         <div class="uk-margin">
-                            <label class="uk-form-label" for="password">Password</label>
+                            <label class="uk-form-label" for="description">Description</label>
                             <div class="uk-form-controls">
-                                <input class="uk-input" id="password" type="password" placeholder="Your Password" value="********" >
+                                <textarea class="uk-textarea" rows="5" id="description" placeholder="Your Description">This blog represents my hand-picked collection of outstanding wildlife photography from all over the world.</textarea>
                             </div>
                         </div>
                         <div class="uk-margin">
-                            <label class="uk-form-label" for="language">Language</label>
+                            <div class="uk-form-label">Publication avatar</div>
                             <div class="uk-form-controls">
-                                <select class="uk-select" id="language">
-                                    <option>English</option>
-                                    <option>Russian</option>
-                                    <option>Ukraine</option>
-                                </select>
+                                <img src="img/avatar-empty.png" alt="Avatar">
+                                <input type="hidden" name="avatar">
                             </div>
                         </div>
-                        <h2 class="uk-text-center uk-text-uppercase ">Dashboard</h2>
+                        <h2 class="uk-text-center uk-text-uppercase uk-margin-medium-bottom uk-margin-large">Social and tags</h2>
                         <div class="uk-margin">
-                            <div class="uk-form-label">Interface</div>
-                            <div class="uk-form-controls">
-                                <label><input class="uk-checkbox" type="checkbox" checked> Show notifications from people you follow</label><br>
-                                <label><input class="uk-checkbox" type="checkbox"> Enable endless scrolling</label>
-                            </div>
-                        </div>
-                        <div class="uk-margin">
-                            <div class="uk-form-label">Sounds</div>
-                            <div class="uk-form-controls">
-                                <label><input class="uk-checkbox" type="checkbox" checked> Messaging sounds</label>
-                            </div>
-                        </div>
-                        <h2 class="uk-text-center uk-text-uppercase "> Notifications</h2>
-                        <div class="uk-margin">
-                            <div class="uk-form-label">Email you about</div>
-                            <div class="uk-form-controls">
-                                <label><input class="uk-checkbox" type="checkbox" checked> New followers</label><br>
-                                <label><input class="uk-checkbox" type="checkbox"> Mentions</label><br>
-                                <label><input class="uk-checkbox" type="checkbox"> Answered Asks</label><br>
-                                <label><input class="uk-checkbox" type="checkbox"> New fan mail</label>
+                            <label class="uk-form-label" for="email">Contact info</label>
+                            <div class="uk-form-controls social">
+                                <input class="uk-input" id="email" type="email" placeholder="Your Email" value="info@thebeautyofwl.com">
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="email"><span class="tumblr-icon" data-uk-icon="tumblr"></span> tumblr.com/</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" type="text" placeholder="username">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="email"><span class="facebook-icon" data-uk-icon="facebook"></span> facebook.com/</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" type="text" placeholder="username">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="email"><span class="twitter-icon" data-uk-icon="twitter"></span> twitter.com/</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" type="text" placeholder="username">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="uk-margin">
-                            <label class="uk-form-label" for="notifications">Notifications</label>
+                            <label class="uk-form-label" for="email">Tags</label>
                             <div class="uk-form-controls">
-                                <select class="uk-select" id="notifications">
-                                    <option>From everyone</option>
-                                    <option>From friends</option>
-                                    <option>From selected people</option>
-                                </select>
+                                <div class="uk-form-control tags-button-list">
+                                    <button class="uk-button uk-button-default uk-button-small uk-text-uppercase">Nature <span data-uk-close></span></button>
+                                    <button class="uk-button uk-button-default uk-button-small uk-text-uppercase">Animals <span data-uk-close></span></button>
+                                    <button class="uk-button uk-button-default uk-button-small uk-text-uppercase">Wildlife <span data-uk-close></span></button>
+                                    <button class="uk-button uk-button-default uk-button-small add-tag-button"><span data-uk-icon="plus"></span></button>
+                                </div>
                             </div>
                         </div>
-                        <div class="uk-margin-large">
+                        <div class="uk-margin-medium">
                             <div class="uk-form-controls">
                                 <a href="#" class="ul-align-center uk-text-uppercase uk-margin-large-right uk-text-danger uk-text-bold">Cancel</a>
                                 <input type="submit" class="uk-button uk-button-danger" value="Save">
