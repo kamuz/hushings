@@ -431,11 +431,13 @@ body.index .main-intro p.top{
   CUNSOMER SETTINGS
 --------------------------------------------------*/
 
-.cunsomer header{
+.cunsomer header,
+.creator header{
     border-bottom: 1px solid #E0E0E0;
 }
 
-.cunsomer .search-container .uk-search{
+.cunsomer .search-container .uk-search,
+.creator .search-container .uk-search{
     top: 20px;
     left: 120px;
 }

@@ -12,3 +12,4 @@ List of pages:
 * [Consomer Likes](https://roddyr2.github.io/hushings/cunsomer-likes.html)
 * [Consomer Search results](https://roddyr2.github.io/hushings/cunsomer-search.html)
 * [Creator Settings](https://roddyr2.github.io/hushings/creator-settings.html)
+* [Creator Followers](https://roddyr2.github.io/hushings/creator-followers.html)
