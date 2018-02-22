@@ -11,3 +11,4 @@ List of pages:
 * [Consomer Dashboard](https://roddyr2.github.io/hushings/cunsomer-dashboard.html)
 * [Consomer Likes](https://roddyr2.github.io/hushings/cunsomer-likes.html)
 * [Consomer Search results](https://roddyr2.github.io/hushings/cunsomer-search.html)
+* [Creator Settings](https://roddyr2.github.io/hushings/creator-settings.html)
