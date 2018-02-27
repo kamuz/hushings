@@ -737,6 +737,158 @@ input.uk-input[type="password"],
 }
 
 /*--------------------------------------------------
+  CREATOR MESSAGING
+--------------------------------------------------*/
+
+#creator-messaging .messaging-container .users .users-list,
+#creator-messaging .messaging-container .messages .conversation{
+    height: 400px;
+}
+
+#creator-messaging .messaging-container .users,
+#creator-messaging .messaging-container .messages{
+    border: 1px solid #E0E0E0;
+}
+
+#creator-messaging .messaging-container .messages{
+    border-left: none;
+}
+
+#creator-messaging .messaging-container .users .uk-search{
+    left: 15px;
+    top: 10px;
+}
+
+#creator-messaging .messaging-container .users .uk-search .uk-search-input{
+    width: 365px;
+}
+
+#creator-messaging .messaging-container .users .users-list{
+    margin-left: 15px;
+    margin-top: 30px;
+    padding-bottom: 80px;
+}
+
+#creator-messaging .messaging-container .users .users-list .user-item .status,
+#creator-messaging .messaging-container .messages .selected-user .status{
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ffffff;
+    background-color: #9ccc65;
+    display: block;
+    border-radius: 100%;
+    left: 26px;
+    top: 26px;
+}
+
+#creator-messaging .messaging-container .users .users-list .user-item.active .status,
+#creator-messaging .messaging-container .messages .selected-user .status{
+    background-color: #9ccc65;
+}
+
+#creator-messaging .messaging-container .users .users-list .user-item.inactive .status{
+    background-color: #e0e0e0;
+}
+
+#creator-messaging .messaging-container .users .users-list .user-item .creator-avatar,
+#creator-messaging .messaging-container .messages .creator-avatar{
+    margin: 0 15px 5px 0;
+}
+
+#creator-messaging .messaging-container .users .users-list .user-item .date{
+    font-size: 12px;
+    top: 5px;
+    right: 10px;
+}
+
+
+#creator-messaging .messaging-container .messages{
+    background-color: #F9F9F9;
+}
+
+#creator-messaging .messaging-container .messages .selected-user{
+    padding: 10px 0 17px 15px;
+    background-color: #FFF;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#creator-messaging .messaging-container .messages .selected-user .creator-username{
+    padding-top: 8px;
+}
+
+#creator-messaging .messaging-container .messages .conversation{
+    padding: 15px;
+}
+
+#creator-messaging .messaging-container .messages .conversation .yours,
+#creator-messaging .messaging-container .messages .conversation .my{
+    max-width: 60%;
+    min-width: 15%;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+#creator-messaging .messaging-container .messages .conversation .yours .time,
+#creator-messaging .messaging-container .messages .conversation .my .time{
+    font-size: 12px;
+    bottom: 5px;
+    right: 10px;
+}
+
+#creator-messaging .messaging-container .messages .conversation .yours .corner-top{
+    width: 12px;
+    height: 20px;
+    top: -2px;
+    left: -0px;
+    background: url('../img/message-white-corner-left.png') no-repeat;
+}
+
+#creator-messaging .messaging-container .messages .conversation .my .corner-top{
+    width: 11px;
+    height: 17px;
+    top: -1px;
+    right: -0px;
+    background: url('../img/message-blue-corner-right.png') no-repeat;
+}
+
+#creator-messaging .messaging-container .messages .conversation .yours .time{
+    color: #E0E0E0;
+    float: right;
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+
+#creator-messaging .messaging-container .messages .conversation .my .time{
+    color: #FFF;
+    float: right;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+#creator-messaging .messaging-container .messages .conversation .yours{
+    background: #FFF;
+}
+
+#creator-messaging .messaging-container .messages .conversation .my{
+    background-color: #8BB5FF;
+}
+
+#creator-messaging .messaging-container .messages .uk-form{
+    padding: 10px 50px 10px 55px;
+    border-top: 1px solid #E0E0E0;
+    background-color: #F3F3F3;
+}
+
+#creator-messaging .messaging-container .messages .uk-form .uk-form-custom{
+    left: 15px;
+}
+
+#creator-messaging .messaging-container .messages .uk-form .insert-emoji{
+    top: 13px;
+    right: 15px;
+}
+
+/*--------------------------------------------------
   RESPONSIVE
 --------------------------------------------------*/
 

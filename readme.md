@@ -16,3 +16,5 @@ List of pages:
 12. [Creator Profile](https://roddyr2.github.io/hushings/creator-profile.html)
 12. [Creator Edit appearance](https://roddyr2.github.io/hushings/creator-appearance.html)
 12. [Creator Earned](https://roddyr2.github.io/hushings/creator-earned.html)
+12. [Creator Stats](https://roddyr2.github.io/hushings/creator-stats.html)
+12. [Creator Messaging](https://roddyr2.github.io/hushings/creator-messaging.html)
