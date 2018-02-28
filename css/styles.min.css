@@ -1016,5 +1016,20 @@ input.uk-input[type="password"],
 }
 
 @media only screen and (max-width: 640px) {
-    
+    #creator-profile canvas{
+        height: 180px;
+    }
+
+    #creator-profile .name{
+        color: #000 !important;
+    }
+
+    #creator-profile .description{
+        color: #ccc !important;
+    }
+
+    #creator-profile h2{
+        margin-top: 130px;
+    }
+
 }
