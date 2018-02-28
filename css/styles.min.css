@@ -724,7 +724,7 @@ input.uk-input[type="password"],
     border-radius: 100%;
     color: #333;
     padding: 0;
-    line-height: 27px;
+    line-height: 26px;
 }
 
 .tags-button-list .add-tag-button svg{
@@ -1004,6 +1004,9 @@ input.uk-input[type="password"],
         position: absolute;
         left: 50%;
         margin-left: -10px;
+    }
+    .uk-form-controls.social .uk-form-label{
+        float: left;
     }
 }
 
