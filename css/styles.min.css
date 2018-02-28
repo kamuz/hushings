@@ -974,6 +974,11 @@ input.uk-input[type="password"],
     border-radius: 100%;
 }
 
+.uk-offcanvas-close.uk-close.uk-icon:hover,
+.uk-offcanvas-close.uk-close.uk-icon:active{
+    color: #000;
+}
+
 .uk-offcanvas-close.uk-close.uk-icon > svg{
     display: none;
 }
