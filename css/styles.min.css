@@ -950,6 +950,11 @@ input.uk-input[type="password"],
     color: #333;
 }
 
+.uk-offcanvas-bar .uk-nav.uk-position-bottom{
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
 .uk-offcanvas-bar .uk-nav>li>a{
     color: #333;
     padding: 10px 0;
