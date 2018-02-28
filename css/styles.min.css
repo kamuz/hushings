@@ -988,7 +988,9 @@ input.uk-input[type="password"],
 --------------------------------------------------*/
 
 @media only screen and (max-width: 1200px) {
-    /**/
+    .signup-page .signup-profile-login{
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 960px) {
@@ -1005,10 +1007,14 @@ input.uk-input[type="password"],
         height: 15px;
     }
     .cunsomer .logo,
-    .creator .logo{
+    .creator .logo,
+    .signup-page .logo{
         position: absolute;
         left: 50%;
         margin-left: -10px;
+    }
+    .signup-page .logo{
+        margin-top: 20px;
     }
     .uk-form-controls.social .uk-form-label{
         float: left;
