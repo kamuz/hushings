@@ -86,6 +86,28 @@ h2{
     margin-bottom: 5px;
 }
 
+.uk-navbar-toggle{
+    color: #FFF;
+}
+
+.uk-offcanvas-bar{
+    background-color: #FFF;
+}
+
+.uk-offcanvas-bar .uk-nav-primary>li.uk-active>a,
+.uk-offcanvas-bar .uk-nav-primary>li>a{
+    color: #333333;
+}
+
+.uk-offcanvas-bar .uk-offcanvas-close{
+    color: #333333;
+}
+
+ .uk-navbar-toggle{
+    height: 50px;
+    padding: 0;
+ }
+
 /*--------------------------------------------------
   TOP MENU
 --------------------------------------------------*/
@@ -889,6 +911,54 @@ input.uk-input[type="password"],
 }
 
 /*--------------------------------------------------
+  MOBILE MENU
+--------------------------------------------------*/
+
+.uk-offcanvas-bar{
+    padding: 15px;
+    width: 200px;
+}
+
+.uk-offcanvas-bar .uk-search-default .uk-search-input{
+    width: 170px;
+}
+
+.uk-offcanvas-bar .uk-search-default .uk-search-input,
+.uk-offcanvas-bar .uk-search-default .uk-search-input:focus{
+    background-color: #FFF;
+    color: #333;
+    border: 1px solid #E0E0E0;
+}
+
+.uk-offcanvas-bar .uk-search-default .uk-search-icon,
+.uk-offcanvas-bar .uk-search-default .uk-search-input::placeholder {
+    color: #333;
+}
+
+.uk-offcanvas-bar .uk-nav>li>a{
+    color: #333;
+    padding: 10px 0;
+}
+
+.uk-offcanvas-bar .uk-search-default{
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.uk-offcanvas-close.uk-close.uk-icon{
+    left: 10px;
+}
+
+.uk-offcanvas-close.uk-close.uk-icon span{
+    border: 1px solid #333;
+    border-radius: 100%;
+}
+
+.uk-offcanvas-close.uk-close.uk-icon > svg{
+    display: none;
+}
+
+/*--------------------------------------------------
   RESPONSIVE
 --------------------------------------------------*/
 
@@ -897,7 +967,18 @@ input.uk-input[type="password"],
 }
 
 @media only screen and (max-width: 992px) {
-    /**/
+    .index #fp-nav{
+        left: 50%;
+        top: 95%;
+        margin-left: -42px;
+    }
+    #fp-nav ul li, .fp-slidesNav ul li{
+        display: inline-block;
+    }
+    #fp-nav ul li a span{
+        width: 15px;
+        height: 15px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
