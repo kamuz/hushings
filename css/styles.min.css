@@ -86,8 +86,14 @@ h2{
     margin-bottom: 5px;
 }
 
-.uk-navbar-toggle{
+.index .uk-navbar-toggle,
+.login .uk-navbar-toggle{
     color: #FFF;
+}
+
+.uk-navbar-toggle{
+    margin: 10px 0;
+    color: #000;
 }
 
 .uk-offcanvas-bar{
@@ -491,6 +497,11 @@ body.index .main-intro p.top{
   CUNSOMER SETTINGS
 --------------------------------------------------*/
 
+.cunsomer .logo,
+.creator .logo{
+    margin: 20px 0;
+}
+
 .cunsomer header,
 .creator header{
     border-bottom: 1px solid #E0E0E0;
@@ -515,6 +526,10 @@ input.uk-input[type="password"],
 
 #cunsomer-settings form input.uk-checkbox{
     margin-right: 5px;
+}
+
+.submit-buttons-center{
+    width: 210px;
 }
 
 /*--------------------------------------------------
@@ -966,7 +981,7 @@ input.uk-input[type="password"],
     /**/
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 960px) {
     .index #fp-nav{
         left: 50%;
         top: 95%;
@@ -979,16 +994,14 @@ input.uk-input[type="password"],
         width: 15px;
         height: 15px;
     }
+    .cunsomer .logo,
+    .creator .logo{
+        position: absolute;
+        left: 50%;
+        margin-left: -10px;
+    }
 }
 
-@media only screen and (max-width: 768px) {
-    /**/
-}
-
-@media only screen and (max-width: 480px) {
-    /**/
-}
-
-@media only screen and (max-width: 320px) {
-    /**/
+@media only screen and (max-width: 640px) {
+    
 }
