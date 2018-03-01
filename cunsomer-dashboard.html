@@ -15,9 +15,9 @@
         <div class="uk-container">
             <nav class="uk-navbar-container uk-navbar-transparent nav-cunsomer" data-uk-navbar>
                 <a class="uk-navbar-toggle uk-hidden@m" data-uk-navbar-toggle-icon="ratio: 1.4" href="#" data-uk-toggle="target: #offcanvas-nav-primary"></a>
-                <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                <div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true">
                    <div class="uk-offcanvas-bar">
-                       <a class="uk-offcanvas-close" type="button" uk-close><span data-uk-icon="icon: arrow-left; ratio: 1.3"></span></a>
+                       <a class="uk-offcanvas-close" data-uk-close><span data-uk-icon="icon: arrow-left; ratio: 1.3"></span></a>
                        <form class="uk-search uk-search-default">
                           <span data-uk-search-icon></span>
                           <input class="uk-search-input" type="search" placeholder="Search Hushings">
@@ -66,15 +66,16 @@
     <section>
         <div class="uk-container uk-margin-large-top">
             <div data-uk-grid>
-                <div class="uk-width-2-3 blog-posts">
+                <div class="uk-width-2-3@m uk-width-1-1@s blog-posts">
                     <div class="blog-post-item uk-grid-medium" data-uk-grid>
                         <div class="uk-width-auto@m">
-                            <img src="img/user-avatar-04.png" alt="ava">
+                            <img src="img/user-avatar-04.png" class="uk-visible@m" alt="ava">
                         </div>
                         <div class="uk-width-expand@m">
                             <div class="uk-card uk-card-default">
                                 <button class="uk-close-large uk-align-right" type="button" data-uk-close></button>
                                 <div class="uk-card-media-top uk-position-relative">
+                                    <img src="img/avatar-mini-04.png" class="uk-hidden@m uk-float-left" alt="ava">
                                     <div class="cunsomer-username">effiecunningham</div>
                                     <img class="fullwidth" src="img/post-image-02.jpg" alt="">
                                 </div>
@@ -92,12 +93,13 @@
                     </div>
                     <div class="blog-post-item uk-grid-medium" data-uk-grid>
                         <div class="uk-width-auto@m">
-                            <img src="img/user-avatar-04.png" alt="ava">
+                            <img src="img/user-avatar-04.png" class="uk-visible@m" alt="ava">
                         </div>
                         <div class="uk-width-expand@m">
                             <div class="uk-card uk-card-default">
                                 <button class="uk-close-large uk-align-right" type="button" data-uk-close></button>
                                 <div class="uk-card-media-top uk-position-relative">
+                                    <img src="img/avatar-mini-04.png" class="uk-hidden@m uk-float-left" alt="ava">
                                     <div class="cunsomer-username">effiecunningham</div>
                                     <div class="media-wrapper">
                                         <audio id="player2" preload="none" controls style="max-width: 100%">
@@ -120,12 +122,13 @@
                     </div>
                     <div class="blog-post-item uk-grid-medium" data-uk-grid>
                         <div class="uk-width-auto@m">
-                            <img src="img/user-avatar-04.png" alt="ava">
+                            <img src="img/user-avatar-04.png" class="uk-visible@m" alt="ava">
                         </div>
                         <div class="uk-width-expand@m">
                             <div class="uk-card uk-card-default">
                                 <button class="uk-close-large uk-align-right" type="button" data-uk-close></button>
                                 <div class="uk-card-media-top uk-position-relative">
+                                    <img src="img/avatar-mini-04.png" class="uk-hidden@m uk-float-left" alt="ava">
                                     <div class="cunsomer-username">effiecunningham</div>
                                 </div>
                                 <div class="blog-post-teaser">
@@ -145,12 +148,13 @@
                     </div>
                     <div class="blog-post-item uk-grid-medium" data-uk-grid>
                         <div class="uk-width-auto@m">
-                            <img src="img/user-avatar-04.png" alt="ava">
+                            <img src="img/user-avatar-04.png" class="uk-visible@m" alt="ava">
                         </div>
                         <div class="uk-width-expand@m">
                             <div class="uk-card uk-card-default">
                                 <button class="uk-close-large uk-align-right" type="button" data-uk-close></button>
                                 <div class="uk-card-media-top uk-position-relative">
+                                    <img src="img/avatar-mini-04.png" class="uk-hidden@m uk-float-left" alt="ava">
                                     <div class="cunsomer-username">alexobrien</div>
                                     <div class="media-wrapper">
                                         <video style="min-width:100%; max-width:100%;" poster="http://www.mediaelementjs.com/images/big_buck_bunny.jpg">
@@ -171,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-width-1-3">
+                <div class="uk-width-1-3 uk-visible@m">
                     <h2>Recommended blogs</h2>
                     <div class="recommended-blogs">
                         <div class="recommended-blog-item uk-clearfix">

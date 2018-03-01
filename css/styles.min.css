@@ -1019,6 +1019,19 @@ input.uk-input[type="password"],
     .uk-form-controls.social .uk-form-label{
         float: left;
     }
+
+    #cunsomer-dashboard .uk-card-media-top img.uk-float-left{
+        margin: 5px 10px 0 10px;
+    }
+
+    #cunsomer-dashboard header{
+        border: none;
+    }
+
+    #cunsomer-dashboard .uk-container.uk-margin-large-top{
+        margin-top: 5px !important;
+    }
+
 }
 
 @media only screen and (max-width: 640px) {
